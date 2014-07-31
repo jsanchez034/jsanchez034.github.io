@@ -1,0 +1,24 @@
+<header class="site-header">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                {% assign sorted_pages = site.pages | sort: 'url' %}
+                {% for page in sorted_pages %}
+                    {% if page.title %}<li>{{page.inspect}}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>{% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-xs-12 col-sm-8 center-block mast-head">
+            <a href="/"><img src="/img/jp_logo.png"/></a>
+            <h3 class="name default">Jon-Pierre Sanchez</h3>
+            <h4 class="title">Software Engineer</h4>
+            <div class="social-icons">
+                <a href="https://twitter.com/J_pizzl3"><i class="fa fa-twitter"></i></a>
+                <a href="www.linkedin.com/pub/jon-pierre-sanchez/9b/314/a28/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/jsanchez034"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</header>

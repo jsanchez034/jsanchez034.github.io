@@ -1,0 +1,12 @@
+# Site settings
+title: Jon-Pierre Sanchez - Software Engineer
+email: jsanc034@gmail.com
+description: "This is the personal site for Jon-Pierre Sanchez"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: J_pizzl3
+github_username:  jsanchez034
+
+# Build settings
+markdown: kramdown
+permalink: pretty
